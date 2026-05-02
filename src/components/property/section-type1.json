@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_property_section_type1s",
+  "info": {
+    "displayName": "SectionType"
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "table",
+        "list"
+      ]
+    },
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "parameters": {
+      "type": "component",
+      "component": "property.parameter",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

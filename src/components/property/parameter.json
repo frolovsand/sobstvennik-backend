@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_property_parameters",
+  "info": {
+    "displayName": "Parameter"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

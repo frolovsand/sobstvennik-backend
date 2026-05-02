@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "address": {
+      "type": "string"
+    },
+    "dealType": {
+      "type": "enumeration",
+      "enum": [
+        "rent",
+        "sale",
+        "rent_and_sale"
+      ]
+    },
+    "rentPrice": {
+      "type": "string"
+    },
+    "salePrice": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isPublished": {
+      "type": "boolean",
+      "default": true
+    },
+    "sections": {
+      "type": "component",
+      "component": "property.section-type1",
+      "repeatable": true
+    }
+  }
+}
