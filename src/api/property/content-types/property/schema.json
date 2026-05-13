@@ -14,6 +14,13 @@
     "title": {
       "type": "string"
     },
+    "presentation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
     "slug": {
       "type": "uid",
       "targetField": "title"
@@ -53,9 +60,7 @@
       "multiple": true,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
     "isPublished": {

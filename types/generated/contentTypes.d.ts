@@ -479,10 +479,7 @@ export interface ApiPropertyProperty extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     dealType: Schema.Attribute.Enumeration<['rent', 'sale', 'rent_and_sale']>;
-    gallery: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    gallery: Schema.Attribute.Media<'images' | 'videos', true>;
     isPublished: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -491,6 +488,7 @@ export interface ApiPropertyProperty extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     mainImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    presentation: Schema.Attribute.Media<'files'>;
     publishedAt: Schema.Attribute.DateTime;
     rentPrice: Schema.Attribute.String;
     salePrice: Schema.Attribute.String;
